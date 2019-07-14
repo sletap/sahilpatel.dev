@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Development -->
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <!-- Production -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <title>Sahil Patel</title>
+</head>
+<body>
+  <div class="hero is-fullheight">
+      <div id="particles-js">
+        <canvas class="particles-js-canvas-el" width="1409" height="319" style="width: 100%; height: 100%;"/>
+      </div><!-- /.particles div -->
+      <div class="container hero-body">
+        <p class="title">Hi, I'm Sahil Patel</p>
+      </div>
+  </div>
+  <!-- <div class="container">
+    Look at my projects
+  </div> -->
+</body>
+
+<style>
+body{ 
+  margin:0; 
+  font:normal 75% Arial, Helvetica, sans-serif; 
+  } 
+  canvas{ 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  } 
+  /* ---- particles.js container ---- */ 
+  #particles-js { 
+    position:absolute; 
+    width: 100%; 
+    height: 100%; 
+    background-color: #ffc3c7; 
+    background-image: url("");
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: 50% 50%; 
+  } 
+</style>
+
+<script>
+particlesJS("particles-js", {"particles":{"number":{"value":461,"density":{"enable":true,"value_area":1657.2885181473096}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":7,"color":"#d9a4ff"},"polygon":{"nb_sides":4},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":2,"random":true,"anim":{"enable":false,"speed":4.869141813755329,"size_min":0,"sync":false}},"line_linked":{"enable":true,"distance":64.09588744762158,"color":"#9270ff","opacity":1,"width":1.9228766234286474},"move":{"enable":true,"speed":3.204794372381079,"direction":"right","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"bubble"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":121.72854534388323,"line_linked":{"opacity":1}},"bubble":{"distance":170.41996348143653,"size":4.057618178129441,"duration":1.866504361939543,"opacity":0.14607425441265987,"speed":3},"repulse":{"distance":324.60945425035527,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+</script>
+</html>
